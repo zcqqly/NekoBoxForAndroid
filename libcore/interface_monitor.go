@@ -40,6 +40,10 @@ func (s *interfaceMonitorStub) UnregisterCallback(element *list.Element[tun.Defa
 func (s *interfaceMonitorStub) RegisterMyInterface(interfaceName string) {
 }
 
+func (s *interfaceMonitorStub) MyInterfaces() []string {
+	return nil
+}
+
 func (s *interfaceMonitorStub) MyInterface() string {
 	return ""
 }
